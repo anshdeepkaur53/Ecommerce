@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<meta charset="UTF-8">
+        <title>Gifts & Trinklets</title>
+        <h2 >Gifts & Trinklets</h2>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrap.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>      
+        <link rel="stylesheet" type="text/css" href="{% static 'css/indexstyle.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+
+        <div class="slide">
+
+            <div class="imag ">
+                <div class="numbertext">1 / 4</div>
+                    <img src="{% static 'images/img-1.jpeg' %}" style="width:100%" height="500px">
+            </div>
+        
+            <div class="imag ">
+                <div class="numbertext">2 / 4</div>
+                    <img src="{% static 'images/img-2.jpeg' %}" style="width:100%" height="500px">
+            </div>
+        
+            <div class="imag ">
+                <div class="numbertext">3 / 4</div>
+                    <img src="{% static 'images/img-3.jpeg' %}" style="width:100%" height="500px">
+            </div>
+
+            <div class="imag ">
+                <div class="numbertext">4 / 4</div>
+                    <img src="{% static 'images/img-4.jpeg' %}" style="width:100%" height="500px">
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+    
+        <div style="text-align:center">
+            <span class="nextslide" onclick="currentSlide(1)"></span>
+            <span class="nextslide" onclick="currentSlide(2)"></span>
+            <span class="nextslide" onclick="currentSlide(3)"></span>
+            <span class="nextslide" onclick="currentSlide(4)"></span>
+        </div>
+        <div class="container  content" style="max-width:600px">
+             <input class ="storevisit" type="submit" value="Check out our collection → " onClick="location.href='{% url 'store' %}'">
+            <h2 >Gifts & Trinklets</h2>
+            <h4 ><i>ABOUT THIS PAGE</i></h4>
+            <p> Since, COVID-19 has become a full-blown pandemic, unemployment rates have skyrocketed as businesses are forced to shutter their doors for the sake of public health.</p>
+            <p>It is certainly a stressful time, especially for small business owners who have much smaller coffers to sustain them.</p>
+            <p>So , we the "Web Alpha Clan" have come up with a website which involves the vast variety of gifts and trinkets thus , the site named "Gifts and Trinkets"</p>
+            <p>We provide the variety of handmade gifts from artissans of India and fresh flowers from the florists to be gifted to our near and dear ones as memorabilia.</p>
+            <p>We offer a delicious range of gourmet products online – birthday cakes, cheese cakes, chocolate cakes, macarons, vegan cakes, individual desserts, gluten free cakes, pies, pastries and more – all baked fresh daily and delivered free.</p>   
+            <p> With this initiative of ours we have managed to employ not just one but a group of professionals involving the home bakers , florists , the artists and the delivery boys.</p>
+
+            <input class ="storevisit" type="submit" value="Visit our store → " onClick="location.href='{% url 'store' %}'">
+        </div>
+
+        <br><br><br><br>
+        
+        <center>
+            <form action="" target="_blank" method="post">
+                <center>
+                            
+                <h6>For Any Inconvenience, Contact Us At : +91-8874007444 Or email at : anshdeep.kaur2000@gmail.com</h6>
+                <p></p>
+                <p></p>
+                <p></p>                 
+                </center>
+            </form>
+        </center>
+                
+            
+        <br>
+        <footer >
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-whatsapp "></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <p>
+                <a href="index.html" target="_blank">Gifts & Trinklets</a>
+            </p>
+        </footer>
+                        
+        <script src="{%static 'js/store.js' %}"></script>
+ </body>       
+</html>

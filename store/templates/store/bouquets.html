@@ -1,0 +1,24 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<h3>Bouquets</h3>
+<div class="row">
+	{% for product in products.objects.category %}
+	{%if product.category == 'Cakes' %}
+			<div class="col-lg-4">
+				<img class="thumbnail" src="{{product.image.url }}">
+				<div class="box-element product">
+				<h6><strong>{{product.name}}</strong></h6>
+				<hr>
+				<h6>Category : {{product.category}}</h6>
+				<h6>About our product : {{product.description}}</h6>
+				<button data-product="{{product.id}}" data-action="add"  class="btn btn-outline-secondary add-btn update-cart ">Add to Cart</button>		
+				<h4 style="display: inline-block; float: right"><strong>₹{{product.price|floatformat:2}}</strong></h4>
+
+				</div>
+			</div>
+	{% endif %}
+	{% endfor %}
+</div>
+
+{% endblock content %}
